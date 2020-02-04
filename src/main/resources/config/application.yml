@@ -1,0 +1,14 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:test
+#    url: jdbc:mysql://localhost:3307/bjazzdb
+#    docker run --name bjazzdb -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=bjazzdb mariadb
+#    password: 1234
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+

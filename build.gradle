@@ -28,6 +28,8 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 
 	runtimeOnly 'com.h2database:h2'
+	implementation "mysql:mysql-connector-java"
+	implementation "com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:2.9.3"
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
